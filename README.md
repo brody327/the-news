@@ -3,7 +3,7 @@
 
 [View Site](https://brody-thenews.netlify.app)
 
-The Ne.ws is a news app that searches for current news articles using ... API. It runs on a stack that includes: HTML/CSS, JQuery, and JavaScript.
+The Ne.ws is a news app that searches for current news articles using Currents API. It runs on a stack that includes: HTML/CSS, JQuery, and JavaScript.
 
 ## Motivation
 I created Simple Calculator to practice implementing a static, single page application using JQuery and JavaScript.
@@ -21,6 +21,8 @@ I created Simple Calculator to practice implementing a static, single page appli
 What makes your project stand out?
 
 ## API Reference
+
+- [Currents API](https://currentsapi.services/en)
 
 Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
