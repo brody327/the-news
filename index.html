@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brody Faust" />
+    <meta name="description" content="Navigate the neverending " />
+    <title>Navigate the News</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/wingcss" /> -->
+    <link rel="stylesheet" href="styles\wing-framework\dist\wing.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="scripts/app.js"></script>
+  </head>
+  <body>
+    <header class="flex-container">
+      <section class="name-logo flex-container">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="The Navigate the News logo."
+        />
+      </section>
+      <h1>Navigate the News</h1>
+      <nav class="nav">
+        <a href="#">Support</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+    <main>
+      <section class="search-bar container">
+        <form id="search" class="flex-container">
+          <h3>Search:</h3>
+          <input
+            type="search"
+            name="search"
+            id="search-field"
+            placeholder="Enter keywords here."
+          />
+          <input type="submit" value="Search" id="search-submit" />
+        </form>
+      </section>
+      <section class="flex-container options-container">
+        <label for="select-categories"
+          >Categories <span class="categories-count"></span
+        ></label>
+        <select name="categories" id="select-categories">
+          <option value="any">None</option>
+        </select>
+        <label for="select-language"
+          >Languages <span class="language-count"></span
+        ></label>
+        <select name="language" id="select-language">
+          <option value="any">Any</option>
+        </select>
+        <label for="select-region"
+          >Regions <span class="region-count"></span
+        ></label>
+        <select name="region" id="select-region">
+          <option value="any">Any</option>
+        </select>
+        <label for="start-date">Start Date: </label>
+        <input type="date" id="start-date" name="start-date" />
+        <label for="end-date">End Date: </label>
+        <input type="date" id="end-date" name="end-date" />
+      </section>
+      <section class="content">
+        <div class="pagination flex-container">
+          <button disabled class="previous">Previous</button>
+          <button disabled class="next">Next</button>
+        </div>
+        <div class="welcome-page flex-container">
+          <h3>Welcome to Navigate the News!</h3>
+          <p>
+            To begin navigating, type in the keywords you wish to search for in
+            the news above.
+          </p>
+          <p>
+            If you want to view all the latest news with no filters, simply
+            press search with no keywords.
+          </p>
+          <p>
+            To filter your search, use the options to the right of the search
+            bar.
+          </p>
+        </div>
+        <div class="news-cards card-holder"></div>
+        <div class="article-modal modal">
+          <article
+            class="modal-content article-details flex-container"
+          ></article>
+        </div>
+        <div class="modal" id="loading">
+          <h2>Loading...</h2>
+          <div class="loader"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Created my free logo at <a href="LogoMakr.com">LogoMakr.com</a></p>
+    </footer>
+  </body>
+</html>
