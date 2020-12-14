@@ -1,5 +1,3 @@
-# the-news
-
 ## The Ne.ws
 **June 2020**
 
