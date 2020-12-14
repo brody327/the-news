@@ -1,5 +1,5 @@
 ## The Ne.ws
-**June 2020**
+**July 2020**
 
 [View Site](https://brody-thenews.netlify.app)
 
